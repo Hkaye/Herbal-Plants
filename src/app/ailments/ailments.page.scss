@@ -1,0 +1,40 @@
+ion-content{
+  --ion-background-color:  #efd99e6b;;
+}
+div{
+  scroll-margin: 0px;
+  margin-left: 15px;
+  
+  --ion-background-color: white;
+}
+ion-header ion-toolbar{
+  --ion-background-color: linear-gradient(90deg, rgb(122, 239, 122) 0%, rgb(73, 180, 73) 100%);
+  text-align: center;
+  align-content: center;
+}
+
+  ion-header .ion-title {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin-top: -3px;
+    height: auto;
+    align-content: center;
+  }
+  .ion-title, h3 {
+    font-family: 'Gilroy';
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: -5px;
+  }
+  ion-searchbar{
+    --ion-background-color: white;
+  }
+  
+  ion-header img{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    float: right;
+  } 

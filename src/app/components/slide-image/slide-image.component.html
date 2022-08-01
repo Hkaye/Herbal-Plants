@@ -1,0 +1,26 @@
+<ion-content scroll="false">
+  <h1>Common Ailment</h1>
+
+  <div class="slideImg">
+    <ion-slides  #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+      <ion-slide>
+        <ion-card-content>
+          <img src = "assets/illness/asthma.png"/>
+        <ion-label> Asthma </ion-label>
+        </ion-card-content>
+      </ion-slide>
+      <ion-slide>
+        <ion-card-content>
+          <img src = "assets/illness/fever.png"/>
+        <ion-label> Fever </ion-label>
+        </ion-card-content>
+      </ion-slide>
+      <ion-slide>
+        <ion-card-content>
+          <img src = "assets/illness/burns.png"/>
+        <ion-label> Burns </ion-label>
+        </ion-card-content>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

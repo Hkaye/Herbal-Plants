@@ -1,0 +1,49 @@
+ion-header ion-toolbar{
+  --ion-background-color: linear-gradient(90deg, rgb(122, 239, 122) 0%, rgb(73, 180, 73) 100%);
+  text-align: center;
+  align-content: center;
+}
+.ion-title {
+  color: white;
+  display: inline-block;
+  margin-top: -3px;
+  height: auto;
+}
+.ion-title, h3 {
+  font-family: 'Gilroy';
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-left: -5px;
+}
+
+ion-header img{
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  float: right;
+} 
+
+ion-content {
+  --ion-background-color: rgb(255, 255, 255);
+
+}
+
+
+//important
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Gilroy';
+  margin-left: 25px;
+}
+ion-list {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ion-item p{
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 1.5;
+}

@@ -1,0 +1,8 @@
+<div class="ion-content">
+    <ion-item (click)="clicked.emit()">
+      <ion-avatar slot="start">
+        <ion-img [src]="favoriteItem.image"></ion-img>
+      </ion-avatar>
+        <ion-label>{{favoriteItem.title}}</ion-label>
+    </ion-item>
+</div>

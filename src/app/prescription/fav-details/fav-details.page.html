@@ -1,0 +1,39 @@
+
+  <div class="header">
+    <ion-buttons>
+      <ion-button routerLink="/nav/favorite">
+        <ion-icon slot="icon-only" color="light" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{favoriteItem.title}}</ion-title>
+    <ion-buttons>
+      <img src = "assets\herbs.png"/>
+    </ion-buttons>
+    
+  </div>
+
+<ion-content >
+    <ion-card>
+      <ion-img [src]="favoriteItem.image"></ion-img>
+    </ion-card>
+      <div class="image">
+        <ion-title class="ailment-title">{{favoriteItem.title}}</ion-title>
+      </div>
+  
+  <ion-content class="content">
+    <!-- description -->
+    <ion-card class="description">
+
+      <p>{{favoriteItem.description}}</p>
+    </ion-card>
+
+    <ion-card class="details">
+      <!-- herbal medication -->
+      <h3>HERBAL MEDICATION</h3>
+      <p><b>{{favoriteItem.plant}}</b></p>
+      <p>{{favoriteItem.def}}</p>
+      <p><b>{{favoriteItem.plant2}}</b></p>
+      <p>{{favoriteItem.def2}}</p>
+    </ion-card>
+</ion-content>
+</ion-content >

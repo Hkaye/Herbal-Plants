@@ -1,0 +1,37 @@
+<div class="header">
+  <ion-buttons>
+    <ion-button routerLink="/nav/ailments">
+      <ion-icon slot="icon-only" color="light" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>{{ailments.title}}</ion-title>
+
+ <i class="far fa-heart" (click)="addItemToFavorite()"></i>
+  
+</div>
+
+<ion-content >
+    <ion-card>
+      <ion-img [src]="ailments.image"></ion-img>
+    </ion-card>
+      <div class="image">
+        <ion-title class="ailment-title">{{ailments.title}}</ion-title>
+      </div>
+  
+  <ion-content class="content">
+    <!-- description -->
+    <ion-card class="description">
+
+      <p>{{ailments.description}}</p>
+    </ion-card>
+
+    <ion-card class="details">
+      <!-- herbal medication -->
+      <h3>HERBAL MEDICATION</h3>
+      <p><b>{{ailments.plant}}</b></p>
+      <p>{{ailments.def}}</p>
+      <p><b>{{ailments.plant2}}</b></p>
+      <p>{{ailments.def2}}</p>
+    </ion-card>
+  </ion-content>
+</ion-content >

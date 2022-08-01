@@ -1,0 +1,30 @@
+<div class="header">
+  <ion-buttons>
+    <ion-button routerLink="/nav/herbal">
+      <ion-icon slot="icon-only" color="light" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>{{herbal.name}}</ion-title>
+</div>
+
+<ion-content>
+    <ion-img [src]="herbal.images"></ion-img>
+    <div class="sname">Scientific Name: {{herbal.sname}}</div>
+
+  <!-- description -->
+    <div class="des">
+    <p>{{herbal.description}}</p>
+    </div>
+
+    <!-- use -->
+    <div class="use">
+    <h3>Medicinal Uses</h3>
+    <p>{{herbal.use}}</p>
+    </div>
+
+    <!-- Preparation -->
+    <div class="pre">
+    <h3>Preparation</h3>
+    <p>{{herbal.preparation}}</p>
+    </div>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Favorite</ion-title>
+    <img src = "assets\herbs.png"/>
+
+    <!-- Hamburger -->
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list lines="none">
+  <!-- Favorite Herbal Medicine  -->
+    <ion-item-sliding *ngFor="let favoriteItem of favoriteItem$|async">
+      <ion-item>
+        <app-favorite-item [favoriteItem]="favoriteItem" (clicked)="goToFavDetailPage(favoriteItem.id)"></app-favorite-item>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="removeFromFavorite(favoriteItem)">
+          <ion-icon name="trash-outline" size="large" color="danger"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <!-- Empty Favorite -->
+  <div class="empty" *ngIf="!(favoriteItem$|async).length">
+    <p>No added favorites</p>
+  </div> 
+
+</ion-content>

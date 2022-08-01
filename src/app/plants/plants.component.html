@@ -1,0 +1,10 @@
+<div class="ion-content">
+    <ion-list (click)="clicked.emit()">
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img [src]="item.images"></ion-img>
+        </ion-avatar>
+          <ion-label>{{item.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+</div>

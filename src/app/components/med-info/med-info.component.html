@@ -1,0 +1,17 @@
+<div *ngFor="let x of medicinal">
+  <ion-card-content>
+    <div class="medTitle">
+      {{x.medicinalTitle}}
+    </div>
+    <div class="medDes">
+      <div *ngIf="!x.showMore">
+        {{trimString(x.medicinalDes,300)}}
+      </div>
+      <div *ngIf="x.showMore">
+        {{x.medicinalDes}}
+      </div>
+      <a (click)="x.showMore = !x.showMore">Read <span [innerHtml]="x.showMore ? 'less' : 'More'">  </span>
+      </a>
+    </div>
+  </ion-card-content>
+</div>
